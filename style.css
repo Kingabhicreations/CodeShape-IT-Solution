@@ -1,0 +1,164 @@
+/* Basic reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  
+  /* Body and background setup */
+  body {
+    font-family: 'Arial', sans-serif;
+    background: linear-gradient(to right, #6a11cb, #2575fc);
+    color: white;
+    text-align: center;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    animation: backgroundAnimation 5s ease-in-out infinite;
+  }
+  
+  @keyframes backgroundAnimation {
+    0% {
+      background: linear-gradient(to right, #6a11cb, #2575fc);
+    }
+    50% {
+      background: linear-gradient(to right, #ff7e5f, #feb47b);
+    }
+    100% {
+      background: linear-gradient(to right, #6a11cb, #2575fc);
+    }
+  }
+  
+  .button-box {
+    display: flex;
+    justify-content: center;  /* center them */
+    gap: 20px;                /* adjust this value as needed */
+  }
+  
+  
+  /* Container for content */
+  .container {
+    max-width: 600px;
+    width: 100%;
+    background-color: rgba(0, 0, 0, 0.6);
+    padding: 40px;
+    border-radius: 15px;
+    box-shadow: 0px 8px 30px rgba(0, 0, 0, 0.2);
+    animation: fadeIn 1s ease-out;
+  }
+  
+  /* Animation for fade-in effect */
+  @keyframes fadeIn {
+    from {
+      opacity: 0;
+      transform: translateY(50px);
+    }
+    to {
+      opacity: 1;
+      transform: translateY(0);
+    }
+  }
+  
+  /* Header styles */
+  h1, h2 {
+    font-size: 2em;
+    margin-bottom: 20px;
+    font-family: 'Roboto', sans-serif;
+  }
+  
+  h2 {
+    margin-top: 20px;
+  }
+  
+  /* Form and button styling */
+  form input {
+    width: 100%;
+    padding: 15px;
+    margin: 10px 0;
+    border-radius: 8px;
+    border: none;
+    background-color: #fff;
+    font-size: 1em;
+  }
+  
+  form button {
+    background-color: #2575fc;
+    color: white;
+    padding: 15px 30px;
+    margin-top: 20px;
+    border: none;
+    border-radius: 8px;
+    font-size: 1.2em;
+    cursor: pointer;
+    transition: background-color 0.3s;
+  }
+  
+  form button:hover {
+    background-color: #6a11cb;
+  }
+  
+  /* Links styling */
+  a {
+    color: #2575fc;
+    text-decoration: none;
+  }
+  
+  a:hover {
+    text-decoration: underline;
+  }
+  
+  /* Animation for button hover */
+  button:hover {
+    transform: scale(1.05);
+    box-shadow: 0px 5px 20px rgba(0, 0, 0, 0.2);
+  }
+  
+  /* Results section */
+  ul {
+    list-style-type: none;
+    padding: 20px;
+  }
+  
+  li {
+    font-size: 1.2em;
+    padding: 10px;
+    border-bottom: 1px solid #fff;
+    margin-bottom: 10px;
+  }
+  
+  li:last-child {
+    border-bottom: none;
+  }
+  
+  h3 {
+    margin-top: 20px;
+    font-size: 1.8em;
+    color: #ffcc00;
+  }
+  
+  /* Radio buttons styling */
+  input[type="radio"] {
+    margin-right: 10px;
+  }
+  
+  form div {
+    margin-bottom: 15px;
+  }
+  
+  /* Hover and focus effects */
+  input:focus, button:focus {
+    outline: none;
+    border: 2px solid #2575fc;
+    box-shadow: 0px 0px 10px rgba(37, 117, 252, 0.6);
+  }
+  
+  /* Small screen adjustments */
+  @media (max-width: 768px) {
+    .container {
+      padding: 20px;
+    }
+    h1, h2 {
+      font-size: 1.5em;
+    }
+  }
